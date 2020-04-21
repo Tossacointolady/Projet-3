@@ -1,0 +1,399 @@
+/* éciture normal*/ 
+
+@font-face /* éciture carte*/ 
+{
+	font-family: "KaushanScript";
+	src: url('KaushanScript-Regular.otf');
+}
+
+
+
+@font-face /* éciture carte 1*/ 
+{
+	font-family: "blackjack";
+	src: url('blackjack.otf');
+}
+
+
+@font-face /* éciture carte 3 */ 
+{
+	font-family: "AlexBrush";
+	src: url('AlexBrush-Regular.ttf');
+}
+
+@font-face /* éciture carte 4*/ 
+{
+	font-family: "ici";
+	src: url('ici');
+}
+
+
+@font-face /* éciture carte norm*/ 
+{
+	font-family: "Courier Prime";
+	src: url('Courier Prime Italic.ttf');
+}
+
+
+
+/* General */
+
+body
+{
+	width: 100%
+    background-color: white;
+
+}
+
+#bloc_page
+{
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color: white;
+
+}
+  
+header
+
+{
+    width: 100%;
+    height: auto;
+    background-color: #579C87;
+    color: #FDCB46;
+    text-align: center;
+    font-size:35px;
+    padding: 5px 0px 5px 0px;
+
+}
+  
+
+a , a:hover /*apparence texte carte*/
+{
+	text-decoration: none;
+
+}  
+
+footer
+{
+	margin: 70px 0px 30px 0px;
+}
+ 
+footer a /* Liens  */
+{
+   text-decoration: none;
+   color: #FDCB46;
+
+
+
+}
+
+footer  a:hover /* Apparence au survol des liens */
+{
+	text-decoration: none;
+	color: #FDCB46;
+}
+
+
+li
+{
+	list-style-type: none;
+}
+
+/* head header  et footer */ 
+
+
+
+
+
+
+.bas
+{
+	width: 100%;
+	height: auto;
+    background-color: #579C87;
+    color: #FDCB46;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.bas a
+{
+    background-color: #579C87;
+    color: #FDCB46;
+	font-family: ;
+	font-size: 25px;
+	padding: 10px 50px 10px 50px;
+}
+
+
+
+.lien1 .lien2 .lien3 .lien4 
+{
+
+	text-align: center;
+	font-family: ;
+	font-size: 15px;
+	color: #414141;
+}
+
+
+
+
+
+
+
+/*prochainement */ 
+
+.prochainement 
+{
+	width: 30%;
+	height: 40px;
+	background: #579c87ff;
+	color: #fdcb46ff;
+	border-radius: 5px;
+	font-family: ;
+	font-size: 30px;
+	text-align: center;
+    margin-left: auto;
+	margin-right: auto;
+
+
+}
+
+
+
+ /* Carte */ 
+
+
+
+
+.cartehaut
+{
+    width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+ 
+}
+
+.cartebas
+{
+    width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+ 
+}
+
+
+
+
+
+
+
+
+.carte_1
+{
+    width: 350px;
+    height: 480px;
+    font-family: blackjack;
+    box-shadow: 0px 0px 10px #EDEDED;
+    background-color: #FCDFDB;
+    margin: 20px 50px 20px 50px;
+    color: #3C1218;
+}
+
+.carte_2
+{
+    width: 350px;
+    height: 480px;
+    font-family: AVOIR;
+    box-shadow: 0px 0px 10px #EDEDED;
+    background-color: #FFF5FE;
+    margin: 20px 50px 20px 50px;
+    color: white;
+}
+
+.carte_3
+{
+    width: 350px;
+    height: 480px;
+    font-family: AlexBrush;
+    box-shadow: 0px 0px 10px #EDEDED;
+    background-color: #F9F9F9;
+    margin: 20px 50px 20px 50px;
+    color: white;
+}
+
+.carte_4
+{
+    width: 350px;
+    height: 480px;
+    font-family: AVOIR;
+    box-shadow: 0px 0px 10px #EDEDED;
+    background-color: #FDFFFD;
+    margin: 20px 50px 20px 50px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* important*/ 
+
+.link { color: #FDCB46; } /* couleur du lien sans avoir cliquer */
+.link:hover { color: #FDCB46; }/* couleur du lien une fois visité*/
+
+
+
+/*menu general */
+
+
+h3
+{
+	text-align: center;
+	font-size:25px;
+}
+h2
+{
+	text-align: center;
+	font-size: 35px;
+}
+
+
+
+
+/* Menu note carte 1*/ 
+
+.carte1 h2
+{
+	font-family: blackjack;
+}
+
+.menunote
+{
+    width: 65%;
+    height: auto;
+    margin-left: auto;
+	margin-right: auto;
+    background-color: #FCDFDB;
+    color: #3D1319;
+
+}
+
+.lien1
+{
+
+    color: #3D1319;
+
+}
+
+.price
+{
+
+
+}
+
+
+.lien1
+{
+
+    color: #3D1319;
+
+}
+/* Menu francais carte 2*/ 
+
+.carte2 h2
+{
+	font-family: blackjack;
+}
+
+.menufr
+{
+    width: 65%;
+    height: auto;
+    margin-left: auto;
+	margin-right: auto;
+    background-color: #FFF5FE;
+    color: #3D1319;
+
+
+
+}
+
+.lien2
+{
+
+    color: #3D1319;
+
+}
+
+/* Menu francais papille 3*/ 
+
+
+.carte3 h2
+{
+	font-family: AlexBrush;
+}
+.menupap
+{
+    width: 65%;
+    height: auto;
+    margin-left: auto;
+	margin-right: auto;
+    background-color: #EDEFEF;
+    color: black;
+
+}
+.lien3
+{
+
+    color: #3D1319;
+
+}
+
+/* Menu gout carte 4*/ 
+
+.carte4 h2
+{
+	font-family: blackjack;
+}
+
+.menugout
+{
+    width: 65%;
+    height: auto;
+    margin-left: auto;
+	margin-right: auto;
+    background-color: #FDFFFD;
+    color: black;
+
+
+}
+
+
+.lien4
+{
+
+    color: #3D1319;
+
+}
+
+
+
+
+
+
+
+
