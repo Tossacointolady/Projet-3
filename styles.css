@@ -1,3 +1,6 @@
+
+
+
 /* éciture normal*/ 
 
 @font-face /* éciture carte*/ 
@@ -42,6 +45,7 @@ body
 {
 	width: 100%
     background-color: white;
+    margin: 0px 0px 0px 0px;
 
 }
 
@@ -162,14 +166,16 @@ li
     margin-left: auto;
 	margin-right: auto;
 
+}
 
+h4 
+{
+  font-size: 30px;
 }
 
 
 
- /* Carte */ 
-
-
+/* Carte */ 
 
 
 .cartehaut
@@ -196,7 +202,90 @@ li
 
 
 
+/* Animation */ 
 
+
+
+h4:after /* PROCHAINEMENT */ 
+{ 
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 3200ms infinite;      
+  animation: ellipsis steps(4,end) 3200ms infinite;
+  content: "\2026"; /* 2026 animation point*/
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+
+
+
+.block /* carte animation*/ 
+{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+ .block:hover  {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	opacity: 0.7;
+}
+
+
+.wiz:hover /* animation wiz footer */ 
+{
+  animation: shake 0.6s;
+  animation-iteration-count: infinite;
+  background: transparent; 
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+
+}
+
+.titrecat
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+}
+
+h3
+{
+	font-size: 30px;
+	text-align: center;
+	background: linear-gradient(to top, black, transparent 5.01%) no-repeat left bottom/0 100%;
+	transition: background-size 1200ms;
+}
+  h3:hover {
+  background-size: 100% 100%;
+}
+
+
+/*carte*/
 
 
 .carte_1
@@ -208,7 +297,10 @@ li
     background-color: #FCDFDB;
     margin: 20px 50px 20px 50px;
     color: #3C1218;
+	opacity: 1; 
 }
+
+
 
 .carte_2
 {
@@ -260,7 +352,7 @@ li
 /*menu general */
 
 
-h3
+h5
 {
 	text-align: center;
 	font-size:25px;
@@ -389,11 +481,4 @@ h2
     color: #3D1319;
 
 }
-
-
-
-
-
-
-
 
