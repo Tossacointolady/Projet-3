@@ -720,7 +720,14 @@ ul
 	{
 	width: 30%;
 	}
+	.notedebut img
+	{
+	width: 16%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
 
+	}
 
 	.menunote
     {
@@ -955,4 +962,12 @@ ul
 	font-size: 40px;
 	}
 
+	.notedebut img
+	{
+	width: 16%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+	}
 }
