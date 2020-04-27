@@ -5,10 +5,15 @@
 
 @font-face /* éciture carte*/ 
 {
+	font-family: "Istok-Italic";
+	src: url('Istok-Italic.ttf');
+}
+
+@font-face /* dans le menu carte*/ 
+{
 	font-family: "KaushanScript";
 	src: url('KaushanScript-Regular.otf');
 }
-
 
 
 @font-face /* éciture carte 1*/ 
@@ -17,7 +22,11 @@
 	src: url('blackjack.otf');
 }
 
-
+@font-face /* éciture carte 2 */ 
+{
+	font-family: "Overlock";
+	src: url('Overlock-Black.ttf');
+}
 @font-face /* éciture carte 3 */ 
 {
 	font-family: "AlexBrush";
@@ -26,8 +35,8 @@
 
 @font-face /* éciture carte 4*/ 
 {
-	font-family: "ici";
-	src: url('ici');
+	font-family: "playtime";
+	src: url('playtime.ttf');
 }
 
 
@@ -46,6 +55,7 @@ body
 	width: 100%
     background-color: white;
     margin: 0px 0px 0px 0px;
+
 
 }
 
@@ -213,6 +223,7 @@ h5
 {
 	width: 75%;
 	margin: 0 auto ;
+
 	
 }
 
@@ -242,12 +253,19 @@ h5
 }
 
 
+ h6
+{
+	font-size: 30px;
+	text-align: center;
+	margin: 5px 0px 5px 0px;
+
+}
 
 .carte_2
 {
     width: 280px;
     height: 180px;
-    font-family: AVOIR;
+    font-family: Overlock;
     box-shadow: 0px 0px 8px 1px #B6B8B7;
     background-color: #FFF5FE;
     margin: 15px 5px 15px 15px;
@@ -277,7 +295,7 @@ h5
 {
     width: 280px;
     height: 180px;
-    font-family: AVOIR;
+    font-family: playtime;
     box-shadow: 0px 0px 8px 1px #B6B8B7;
     background-color: #FDFFFD;
     margin: 15px 5px 15px 15px;
@@ -339,37 +357,47 @@ h4:after /* PROCHAINEMENT */
 
 .wiz:hover /* animation wiz footer */ 
 {
-  animation: shake 0.6s;
-  animation-iteration-count: infinite;
-  background: transparent; 
+	animation: shake 0.6s;
+	animation-iteration-count: infinite;
+	background: transparent; 
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+ 	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  	60% { transform: translate(-3px, 1px) rotate(0deg); }
 
 }
 
 .titrecat
 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
 
+}
+.titrecat img 
+	{
+	width: 25%;
+	padding: 0px 5px 0px 5px;
+	}
+.carte1 img 
+{
+	width: 30%;
 }
 
 h3
 {
-	font-size: 17px;
+	font-size: 16px;
 	text-align: center;
 	background: linear-gradient(to top, black, transparent 5.01%) no-repeat left bottom/0 100%;
 	transition: background-size 1200ms;
+	
 }
   h3:hover {
   background-size: 100% 100%;
@@ -384,9 +412,32 @@ h3
 
 
 
+ul
+{
+	list-style: none;
+	text-align: center;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-left: 0px;
+	font-family: Istok-Italic;
 
 
+}
 
+
+.plat
+{
+	font-size: 15px;
+}
+
+.price
+{
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+
+
+}
 
 
 /* Menu note carte 1*/ 
@@ -398,13 +449,16 @@ h3
 
 .menunote
 {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    margin-left: auto;
-	margin-right: auto;
+	margin: 10px auto 50px auto;
+	font-family: blackjack;
 	box-shadow: 0px 0px 8px 1px #B6B8B7;
     background-color: #FCDFDB;
     color: #3D1319;
+
+
+
 
 }
 
@@ -412,12 +466,6 @@ h3
 {
 
     color: #3D1319;
-
-}
-
-.price
-{
-
 
 }
 
@@ -439,9 +487,10 @@ h3
 {
     width: 65%;
     height: auto;
-    margin-left: auto;
-	margin-right: auto;
+    font-family:blackjack; 
+    margin: 10px auto 50px auto;
     background-color: #FFF5FE;
+    box-shadow: 0px 0px 8px 1px #B6B8B7;
     color: #3D1319;
 
 
@@ -466,8 +515,7 @@ h3
 {
     width: 65%;
     height: auto;
-    margin-left: auto;
-	margin-right: auto;
+    margin: 10px auto 50px auto;
 	box-shadow: 0px 0px 8px 1px #B6B8B7;
     background-color: #EDEFEF;
     color: black;
@@ -491,8 +539,7 @@ h3
 {
     width: 65%;
     height: auto;
-    margin-left: auto;
-	margin-right: auto;
+    margin: 10px auto 50px auto;
 	box-shadow: 0px 0px 8px 1px #B6B8B7;
     background-color: #FDFFFD;
     color: black;
@@ -514,6 +561,33 @@ h3
 
 
 
+/*IMAGE NOTE DE MUSIQUE */
+
+
+.notedefin img
+{
+	width: 8%;
+}
+
+
+
+.notedebut img
+{
+	width: 18%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+.block img
+{
+	width: 25%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
 
 
 
@@ -521,13 +595,21 @@ h3
 
 
 
+/* mentin légale */ 
 
+.mention
+{
+    width: 80%;
+    height: auto;
+    font-family:Istok-Italic; 
+    margin: 10px auto 50px auto;
+    background-color: #FFF5FE;
+    box-shadow: 0px 0px 8px 1px #B6B8B7;
+    text-align: justify;
+    color: #3D1319;
+    font-size: 15px
 
-
-
-
-
-
+}
 
 
 
@@ -539,18 +621,27 @@ h3
 
 
 /*RESOLUTION ECRAN tablette*/
-@media screen and (min-width: 768px)(max-width: 1024px)
+@media screen and (min-width: 768px) 
 {
      #bloc_page
     {
-    width: 50%;
-    font-size: 21px;
+    width: 100%;
+    font-size: 40px;
     }
-
+	.menunote
+    {
+    width: 60%;
+    padding: 10px 20px 10px 20px;
+    }
     .nosmenus
     {
-    width: 80%;
+    width: 60%;
     }
+	.titrecat img 
+	{
+	width: 27%;
+	padding: 0px 20px 0px 20px;
+	}
 
     .carte_1 .carte2
     {
@@ -561,8 +652,52 @@ h3
     width: 50%
     }
 
+	ul 
+	{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 10px 30px 20px 30px;
+	}
+ 	h3
+	{
+	font-size:25px;
+	text-align: center;
+
+	}
+	.plat
+	{
+	display: inline-block;
+    text-align: left;
+    width: 90%;
+    font-size: 15px;
+	}
+	.price
+	{
+	display: inline-block;
+    margin: 0;
+    text-align: right;
+    width: 10%;
+    font-size: 18px;
+	
+	}
+
+	.block img
+	{
+	width: 35%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+	}
 
 }
+
+
+
+
+
 
 
 /* écran normal*/
@@ -574,31 +709,47 @@ h3
     {
     width: 100%;
     height: auto;
+    margin: auto;
     font-size: 40px;
     }
-    
+    .carte1 img 
+	{
+	width:35%;
+	}
+	.titrecat img 
+	{
+	width: 30%;
+	}
+
+
+	.menunote
+    {
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    }
+
 
 	.carte_1 
 	{
-    width: 500px;
-    height: 630px;
+    width: 480px;
+    height: 530px;
 	}
 
 
 	.carte_2
 	{
-    width: 500px;
-    height: 630px;
+    width: 480px;
+    height: 530px;
 	}
 	.carte_3
 	{
-    width: 500px;
-    height: 630px;
+    width: 480px;
+    height: 530px;
 	}
 	.carte_4 
 	{
-    width: 500px;
-    height: 630px;
+    width: 480px;
+    height: 530px;
 	}
 
 	h2 
@@ -617,22 +768,71 @@ h3
 	{
 	font-size: 40px;
 	}
-
+	h6
+	{
+	font-size: 45px;
+	}
 	.prochainement
 	{
-	width: 50%;
+	width: 40%;
 	height: auto;
 	font-size: 50px;
 	margin: 0 auto ;
-	padding:0 auto;
+	padding: 0 auto;
 	text-align: center;
 	}
-	.bas
+
+	footer
 	{
-	margin-top: 25px;
+	margin-top: 150px;
+	}
+
+	h3
+	{
+	font-size: 32px;
+	}
+	ul 
+	{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+	}
+
+	.plat
+	{
+	display: inline-block;
+    text-align: left;
+    width: 90%;
+    font-size: 23px;
+	}
+	.price
+	{
+	display: inline-block;
+    margin: 0;
+    text-align: right;
+    width: 10%;
+    font-size: 26px;
+	
+	}
+	.block img
+	{
+	width: 40%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+
+
+	.mention p
+	{
+	font-size: 40px;
 	}
 
 }
+
+
 
 
 
@@ -646,13 +846,35 @@ h3
      #bloc_page
     {
     width: auto;
-    font-size: 45px;
+    font-size: 55px;
     }
-    
+	.carte1 img 
+	{
+	width: 40%;
+	}
+	.titrecat img 
+	{
+	width: 30%;
+	}
+	h6
+	{
+	font-size: 75px;
+	}
+	.menunote
+    {
+    width: 60%;
+    padding: 10px 20px 10px 20px;
+    }
 
-/*carte*/
-
-
+	h3
+	{
+	font-size: 50px;
+	}
+	.menunote
+    {
+    width: 50%;
+    padding: 10px 20px 10px 20px;
+    }
 	.carte_1 
 	{
     width: 550px;
@@ -688,10 +910,49 @@ h3
 	{
 	 font-size: 70px;
 	}
+
 	.bas a 
 	{
 	font-size: 50px;
 	}
 
+	.prochainement
+	{
+	width: 30%;
+	height: auto;
+	font-size: 80px;
+	margin: 0 auto ;
+	padding: 0 auto;
+	text-align: center;
+	}
+	.plat
+	{
+	display: inline-block;
+    text-align: left;
+    width: 90%;
+    font-size: 36px;
+	}
+	.price
+	{
+	display: inline-block;
+    margin: 0;
+    text-align: right;
+    width: 10%;
+    font-size: 39px;
+	
+	}
+	.block img
+	{
+	width: 45%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+	}
+
+	.mention p
+	{
+	font-size: 40px;
+	}
 
 }
