@@ -257,7 +257,8 @@ h5
 {
 	font-size: 30px;
 	text-align: center;
-	margin: 5px 0px 5px 0px;
+	margin: 10px 0px 15px 0px;
+	padding: 20px 0px 20px 0px;
 
 }
 
@@ -275,7 +276,26 @@ h5
 	justify-content:center;
 	align-items:center;
 }
-
+.carte_2 h2 
+{
+	color: #C77412;
+	background: linear-gradient(to right, #C77412 10%, #915DFE 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.carte_2 h5
+{
+	color:#C77412 ;
+}
+.carte2 h6 
+{
+	color: #C77412;
+	background: linear-gradient(to right, #C77412 10%, #915DFE 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 .carte_3
 {
     width: 280px;
@@ -290,7 +310,28 @@ h5
 	justify-content:center;
 	align-items:center;
 }
+.carte_3 h2 
+{
+	color: #0229DD;
+	background: linear-gradient(to right, #0229DD 10%, #0887FB 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.carte_3 h5 
+{
+	color:#0887FB ;
+	font-family: playtime;
+}
 
+.carte3 h6 
+{
+	color: #0229DD;
+	background: linear-gradient(to left,  #369EFC 0%, #0229DD 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 .carte_4
 {
     width: 280px;
@@ -305,9 +346,28 @@ h5
 	justify-content:center;
 	align-items:center;
 }
+.carte_4 h2 
+{
+	color: #3E923A;
+	background: linear-gradient(to right, #3E923A 30%, #BEFF7F 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.carte_4 h5
+{
+	color:#72BF56 ;
+	
+}
 
-
-
+.carte4 h6 
+{
+	color: #3E923A;
+	background: linear-gradient(to right, #3E923A 30%, #BEFF7F 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
 
 /* Animation */ 
@@ -403,6 +463,14 @@ h3
   background-size: 100% 100%;
 }
 
+h3 .note
+{
+	color: #C77412;
+	background: linear-gradient(to right, #C77412 10%, #915DFE 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
 
 /* important*/ 
@@ -438,6 +506,44 @@ ul
 
 
 }
+
+/*couleur carte 2 texte */ 
+
+.menufr .liste_entrée
+{
+	
+	color:#D89C5C;
+}
+
+.french1
+{
+	color:#C67412;
+}
+
+
+.menufr .liste_plat
+{
+	
+	color:#A56799;
+}
+
+.french2
+{
+	color:#A56799;
+}
+
+
+.menufr .liste_dessert
+{
+	
+	color:#6E4CCC;
+}
+
+.french3
+{
+	color:#6E4CCC;
+}
+
 
 
 /* Menu note carte 1*/ 
@@ -796,8 +902,9 @@ ul
 
 	h3
 	{
-	font-size: 32px;
+	font-size: 30px;
 	}
+	
 	ul 
 	{
     display: flex;
