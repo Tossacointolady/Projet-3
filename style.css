@@ -25,7 +25,7 @@
 @font-face /* éciture carte 2 */ 
 {
 	font-family: "Overlock";
-	src: url('Overlock-Black.ttf');
+	src: url('croissantone-regular.ttf');
 }
 @font-face /* éciture carte 3 */ 
 {
@@ -80,7 +80,14 @@ header
 
 }
 
-  
+ .ohmytitre
+ {
+   text-decoration: none;
+   color: #FDCB46;
+
+
+
+}
 
 a , a:hover /*apparence texte carte*/
 {
@@ -90,7 +97,7 @@ a , a:hover /*apparence texte carte*/
 
 footer
 {
-	margin: 10px 0px 30px 0px;
+	margin: 50px 0px 30px 0px;
 }
  
 footer a /* Liens  */
@@ -197,36 +204,26 @@ h5
 
 
 
-.cartehaut
-{
-    
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	text-align: center;
-
- 
-}
-
-.cartebas
-{
-
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	text-align: center;
-}
 
 
 
 .nosmenus
 {
-	width: 75%;
+	width: 60%;
 	margin: 0 auto ;
-
+	display: flex;
+	flex-direction:column;
+	text-align: center;
 	
 }
 
+
+.headercarte
+{
+	font-family: Istok-Italic;
+	font-size:19px;
+	color: #3C1218;
+}
 
 
 	
@@ -239,13 +236,13 @@ h5
 
 .carte_1
 {
-    width: 280px;
-    height: 180px;
+    width: 90%;
+    height: 220px;
     font-family: blackjack;
     box-shadow: 0px 0px 8px 1px #B6B8B7;
     background-color: #FCDFDB;
-	margin: 15px 15px 15px 5px;
     color: #3C1218;
+    margin: 23px 0px 15px 10px;
     display: flex;
 	flex-direction: column;
 	justify-content:center;
@@ -264,12 +261,12 @@ h5
 
 .carte_2
 {
-    width: 280px;
-    height: 180px;
+    width: 90%;
+    height: 220px;
     font-family: Overlock;
     box-shadow: 0px 0px 8px 1px #B6B8B7;
     background-color: #FFF5FE;
-    margin: 15px 5px 15px 15px;
+    margin: 23px 0px 15px 10px;
     color: white;
     display: flex;
 	flex-direction: column;
@@ -298,12 +295,12 @@ h5
 }
 .carte_3
 {
-    width: 280px;
-    height: 180px;
+    width: 90%;
+    height: 220px;
     font-family: AlexBrush;
 	box-shadow: 0px 0px 8px 1px #B6B8B7;
     background-color: #F9F9F9;
-    margin: 15px 15px 15px 5px;
+    margin: 23px 0px 15px 10px;
     color: white;
     display: flex;
 	flex-direction: column;
@@ -334,12 +331,12 @@ h5
 }
 .carte_4
 {
-    width: 280px;
-    height: 180px;
+    width: 90%;
+    height: 220px;
     font-family: playtime;
     box-shadow: 0px 0px 8px 1px #B6B8B7;
     background-color: #FDFFFD;
-    margin: 15px 5px 15px 15px;
+    margin: 23px 10px 15px 10px;
     color: white;
     display: flex;
 	flex-direction: column;
@@ -463,7 +460,7 @@ h3
   background-size: 100% 100%;
 }
 
-h3 .note
+h8 .note
 {
 	color: #C77412;
 	background: linear-gradient(to right, #C77412 10%, #915DFE 100%);
@@ -743,20 +740,58 @@ ul
     {
     width: 60%;
     }
+
+    .cartehaut
+	{
+    
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+
+ 
+	}
+
+	.cartebas
+	{
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	}
 	.titrecat img 
 	{
 	width: 27%;
 	padding: 0px 20px 0px 20px;
 	}
 
-    .carte_1 .carte2
-    {
-    width: 50%
-    }
-    .carte_3 .carte4
-    {
-    width: 50%
-    }
+	.carte_1 
+	{
+    width: 250px;
+    height: 300px;
+    margin: 10px 15px 20px 15px;
+	}
+
+
+	.carte_2
+	{
+    width: 250px;
+    height: 300px;
+    margin: 10px 15px 20px 15px;
+	}
+	.carte_3
+	{
+    width: 250px;
+    height: 300px;
+    margin: 20px 15px 10px 15px;
+	}
+	.carte_4 
+	{
+    width: 250px;
+    height: 300px;
+    margin: 20px 15px 10px 15px;
+	}
 
 	ul 
 	{
@@ -797,6 +832,26 @@ ul
 	margin-right:auto;
 
 	}
+	.prochainement
+	{
+	width: 30%;
+	height: auto;
+	font-size: 18px;
+	margin: 0 auto ;
+	padding: 0 auto;
+	text-align: center;
+	}
+	footer
+	{
+	margin: 50px 0px 30px 0px;
+	}
+
+	.headercarte
+	{
+	font-family: Istok-Italic;
+	font-size:29px;
+	color: #3C1218;
+	}
 
 }
 
@@ -834,44 +889,67 @@ ul
 	margin-right:auto;
 
 	}
+	.cartehaut
+	{
+    
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+
+ 
+	}
+
+	.cartebas
+	{
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	}
 
 	.menunote
     {
     width: 80%;
-    padding: 10px 20px 10px 20px;
+
     }
 
 
 	.carte_1 
 	{
-    width: 480px;
-    height: 530px;
+    width: 400px;
+    height: 540px;
+    margin: 30px 20px 20px 5px;
 	}
 
 
 	.carte_2
 	{
-    width: 480px;
-    height: 530px;
+    width: 400px;
+    height: 540px;
+    margin: 30px 5px 20px 15px;
 	}
 	.carte_3
 	{
-    width: 480px;
-    height: 530px;
+    width: 400px;
+    height: 540px;
+    margin: 30px 20px 20px 5px;
 	}
 	.carte_4 
 	{
-    width: 480px;
-    height: 530px;
+    width: 400px;
+    height: 540px;
+    margin: 10px 5px 20px 15px;
 	}
 
 	h2 
 	{
-	 font-size: 30px;
+	 font-size: 26px;
 	}
 	h5 
 	{
-	 font-size: 50px;
+	 font-size: 40px;
 	}
 	h1 
 	{
@@ -889,7 +967,7 @@ ul
 	{
 	width: 40%;
 	height: auto;
-	font-size: 50px;
+	font-size: 40px;
 	margin: 0 auto ;
 	padding: 0 auto;
 	text-align: center;
@@ -944,6 +1022,12 @@ ul
 	font-size: 40px;
 	}
 
+	.headercarte
+	{
+	font-family: Istok-Italic;
+	font-size:35px;
+	color: #3C1218;
+	}
 }
 
 
@@ -970,6 +1054,25 @@ ul
 	{
 	width: 30%;
 	}
+	.cartehaut
+	{
+    
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+
+ 
+	}
+
+	.cartebas
+	{
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	}
 	h6
 	{
 	font-size: 75px;
@@ -992,24 +1095,32 @@ ul
 	.carte_1 
 	{
     width: 550px;
-    height: 680px;
+    height: 780px;
+    margin: 50px 20px 20px 20px;
 	}
-
+	footer
+	{
+	margin:130px 0px 0px 0px;
+	}
 
 	.carte_2
 	{
     width: 550px;
-    height: 680px;
+    height: 780px;
+    margin: 50px 20px 20px 20px;
 	}
 	.carte_3
 	{
     width: 550px;
-    height: 680px;
+    height: 780px;
+    margin: 20px 20px 20px 20px;
 	}
+
 	.carte_4 
 	{
     width: 550px;
-    height: 680px;
+    height: 780px;
+    margin: 20px 20px 20px 20px;
 	}
 
 	h2 
@@ -1022,12 +1133,13 @@ ul
 	}
 	h1 
 	{
-	 font-size: 70px;
+	 font-size: 100px;
 	}
 
 	.bas a 
 	{
-	font-size: 50px;
+	font-size: 80px;
+
 	}
 
 	.prochainement
@@ -1076,5 +1188,11 @@ ul
 	margin-left:auto;
 	margin-right:auto;
 
+	}
+	.headercarte
+	{
+	font-family: Istok-Italic;
+	font-size:50px;
+	color: #3C1218;
 	}
 }
