@@ -49,6 +49,14 @@
 
 
 /* General */
+ .ohmytitre
+ {
+   text-decoration: none;
+   color: #FDCB46;
+
+
+
+}
 
 body
 {
@@ -80,14 +88,7 @@ header
 
 }
 
- .ohmytitre
- {
-   text-decoration: none;
-   color: #FDCB46;
 
-
-
-}
 
 a , a:hover /*apparence texte carte*/
 {
@@ -954,6 +955,8 @@ ul
 	h1 
 	{
 	 font-size: 65px;
+	 text-decoration: none;
+
 	}
 	.bas a 
 	{
@@ -1134,6 +1137,7 @@ ul
 	h1 
 	{
 	 font-size: 100px;
+	 text-decoration: none;
 	}
 
 	.bas a 
