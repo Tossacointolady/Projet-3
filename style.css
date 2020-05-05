@@ -6,7 +6,13 @@
 @font-face /* éciture carte*/ 
 {
 	font-family: "Istok-Italic";
-	src: url('Istok-Italic.ttf');
+	src: url('Istok-Regular.ttf');
+}
+
+@font-face /* éciture carte interieur*/ 
+{
+	font-family: "Istok-Italic2";
+	src: url('Istok-italic.ttf');
 }
 
 @font-face /* dans le menu carte*/ 
@@ -36,7 +42,7 @@
 @font-face /* éciture carte 4*/ 
 {
 	font-family: "playtime";
-	src: url('playtime.ttf');
+	src: url('PlaytimeOblique.ttf');
 }
 
 
@@ -49,13 +55,15 @@
 
 
 /* General */
- .ohmytitre
- {
+.ohmytitre
+{
    text-decoration: none;
    color: #FDCB46;
 
-
-
+}
+a 
+{
+	text-decoration: none;
 }
 
 body
@@ -147,7 +155,6 @@ li
 {
     background-color: #579C87;
     color: #FDCB46;
-	font-family: ;
 	font-size: 15px;
 	padding: 10px 10px 10px 10px;
 }
@@ -278,7 +285,6 @@ h5
 {
 	color: #C77412;
 	background: linear-gradient(to right, #C77412 10%, #915DFE 100%);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -290,7 +296,6 @@ h5
 {
 	color: #C77412;
 	background: linear-gradient(to right, #C77412 10%, #915DFE 100%);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -312,7 +317,6 @@ h5
 {
 	color: #0229DD;
 	background: linear-gradient(to right, #0229DD 10%, #0887FB 100%);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -326,7 +330,6 @@ h5
 {
 	color: #0229DD;
 	background: linear-gradient(to left,  #369EFC 0%, #0229DD 100%);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -348,7 +351,6 @@ h5
 {
 	color: #3E923A;
 	background: linear-gradient(to right, #3E923A 30%, #BEFF7F 100%);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -362,7 +364,6 @@ h5
 {
 	color: #3E923A;
 	background: linear-gradient(to right, #3E923A 30%, #BEFF7F 100%);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -461,15 +462,13 @@ h3
   background-size: 100% 100%;
 }
 
-h8 .note
-{
-	color: #C77412;
-	background: linear-gradient(to right, #C77412 10%, #915DFE 100%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
 
+
+.noteimg
+{
+	font-size:20px;
+	text-align: center;
+}
 
 /* important*/ 
 
@@ -485,7 +484,7 @@ ul
 	margin-right: 10px;
 	margin-left: 10px;
 	padding-left: 0px;
-	font-family: Istok-Italic;
+	font-family: Istok-Italic2;
 
 
 }
@@ -839,7 +838,7 @@ ul
 	height: auto;
 	font-size: 18px;
 	margin: 0 auto ;
-	padding: 0 auto;
+	padding: 0 ;
 	text-align: center;
 	}
 	footer
@@ -852,6 +851,7 @@ ul
 	font-family: Istok-Italic;
 	font-size:29px;
 	color: #3C1218;
+	text-align: center;
 	}
 
 }
@@ -958,6 +958,11 @@ ul
 	 text-decoration: none;
 
 	}
+	.noteimg
+	{
+	font-size:29px;
+	text-align: center;
+	}
 	.bas a 
 	{
 	font-size: 40px;
@@ -972,7 +977,7 @@ ul
 	height: auto;
 	font-size: 40px;
 	margin: 0 auto ;
-	padding: 0 auto;
+	padding: 0;
 	text-align: center;
 	}
 
@@ -1152,7 +1157,7 @@ ul
 	height: auto;
 	font-size: 80px;
 	margin: 0 auto ;
-	padding: 0 auto;
+	padding: 0;
 	text-align: center;
 	}
 	.plat
@@ -1198,5 +1203,11 @@ ul
 	font-family: Istok-Italic;
 	font-size:50px;
 	color: #3C1218;
+	}
+
+	.noteimg
+	{
+	font-size:40px;
+	text-align: center;
 	}
 }
