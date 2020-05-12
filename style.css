@@ -312,6 +312,8 @@ h5
 	background: linear-gradient(to right, #C77412 10%, #915DFE 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-family: Overlock;
+	font-weight: normal;
 }
 .carte_3
 {
@@ -1091,7 +1093,7 @@ ul
 	.headercarte
 	{
 	font-family: Istok-Italic;
-	font-size:35px;
+	font-size:45px;
 	color: #3C1218;
 	}
 }
@@ -1259,7 +1261,7 @@ ul
 	.headercarte
 	{
 	font-family: Istok-Italic;
-	font-size:50px;
+	font-size:70px;
 	color: #3C1218;
 	}
 
