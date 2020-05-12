@@ -42,7 +42,12 @@
 @font-face /* éciture carte 4*/ 
 {
 	font-family: "playtime";
-	src: url('PlaytimeOblique.ttf');
+	src: url('KaushanScript-Regular.otf');
+}
+@font-face /* titre*/ 
+{
+	font-family: "SegoePrint";
+	src: url('SegoePrint.ttf');
 }
 
 
@@ -203,6 +208,8 @@ h5
 {
 	font-size:19px;
 	margin: 0px 0px 0px 0px;
+	font-weight:normal;
+
 
 }
 
@@ -251,12 +258,17 @@ h5
     background-color: #FCDFDB;
     color: #3C1218;
     margin: 23px 0px 15px 30px;
+    font-weight: bold;
     display: flex;
 	flex-direction: column;
 	justify-content:center;
 	align-items:center;
 }
-
+.carte_1 h5
+{
+	font-family: SegoePrint;
+	font-weight: bold;
+}
 
  h6
 {
@@ -287,10 +299,12 @@ h5
 	background: linear-gradient(to right, #C77412 10%, #915DFE 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-weight: normal;
 }
 .carte_2 h5
 {
 	color:#C77412 ;
+
 }
 .carte2 h6 
 {
@@ -323,7 +337,7 @@ h5
 .carte_3 h5 
 {
 	color:#0887FB ;
-	font-family: playtime;
+	font-family: "SegoePrint";
 }
 
 .carte3 h6 
@@ -350,6 +364,7 @@ h5
 .carte_4 h2 
 {
 	color: #3E923A;
+	font-weight: normal;
 	background: linear-gradient(to right, #3E923A 30%, #BEFF7F 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -357,6 +372,7 @@ h5
 .carte_4 h5
 {
 	color:#72BF56 ;
+	font-family: "SegoePrint";
 	
 }
 
@@ -456,6 +472,7 @@ h3
 	text-align: center;
 	background: linear-gradient(to top, black, transparent 5.01%) no-repeat left bottom/0 100%;
 	transition: background-size 1200ms;
+	font-weight: normal;
 	
 }
   h3:hover {
@@ -550,6 +567,7 @@ ul
 	font-family: blackjack;
 }
 
+
 .menunote
 {
     width: 80%;
@@ -607,7 +625,7 @@ ul
 
 }
 
-/* Menu francais papille 3*/ 
+/* Menu  papille 3*/ 
 
 
 .carte3 h2
@@ -630,7 +648,12 @@ ul
     color: #3D1319;
 
 }
+.pap 
+{
+	font-family: KaushanScript;
+	font-weight:normal;
 
+}
 /* Menu gout carte 4*/ 
 
 .carte4 h2
@@ -659,7 +682,12 @@ ul
 }
 
 
+.gout 
+{
+	font-family: KaushanScript;
+	font-weight:normal;
 
+}
 
 
 
@@ -680,6 +708,7 @@ ul
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
+	padding-top: 10px;
 
 }
 
@@ -855,6 +884,14 @@ ul
 	text-align: center;
 	
 	}
+	.notedebut img
+	{
+	width: 11%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 0px;
+	}
 
 }
 
@@ -886,7 +923,7 @@ ul
 	}
 	.notedebut img
 	{
-	width: 16%;
+	width: 11%;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -1198,11 +1235,11 @@ ul
 
 	.notedebut img
 	{
-	width: 16%;
+	width: 12%;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-
+	padding-top: 50px;
 	}
 	.headercarte
 	{
