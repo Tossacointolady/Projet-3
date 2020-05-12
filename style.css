@@ -346,6 +346,7 @@ h5
 	background: linear-gradient(to left,  #369EFC 0%, #0229DD 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-family: AlexBrush;
 }
 .carte_4
 {
@@ -382,6 +383,7 @@ h5
 	background: linear-gradient(to right, #3E923A 30%, #BEFF7F 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-family: "SegoePrint";
 }
 
 
@@ -1076,7 +1078,10 @@ ul
 	margin-right:auto;
 	}
 
-
+	h6
+	{
+	font-size: 60px;
+	}
 
 	.mention p
 	{
@@ -1136,7 +1141,7 @@ ul
 	}
 	h6
 	{
-	font-size: 75px;
+	font-size: 89px;
 	}
 	.menunote
     {
