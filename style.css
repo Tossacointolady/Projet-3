@@ -1193,7 +1193,7 @@ ul
 
 	h2 
 	{
-	 font-size: 40px;
+	 font-size: 33px;
 	}
 	h5 
 	{
@@ -1207,15 +1207,15 @@ ul
 
 	.bas a 
 	{
-	font-size: 80px;
+	font-size: 60px;
 
 	}
 
 	.prochainement
 	{
-	width: 30%;
+	width: 40%;
 	height: auto;
-	font-size: 80px;
+	font-size: 60px;
 	margin: 0 auto ;
 	padding: 0;
 	text-align: center;
